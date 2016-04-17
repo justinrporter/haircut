@@ -29,5 +29,7 @@ class Haircut(models.Model):
 
 class Donation(models.Model):
 
+    transaction_id = models.CharField(max_length=250)
     contestant = models.ForeignKey(Contestant)
     goal_amount = models.DecimalField(max_digits=6, decimal_places=2)
+    email = models.TextField()
