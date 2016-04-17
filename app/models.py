@@ -1,7 +1,6 @@
 from __future__ import unicode_literals
 
 from django.db import models
-from django.contrib.auth.models import User
 from django.conf import settings
 
 class Contestant(models.Model):
@@ -17,3 +16,18 @@ class Contestant(models.Model):
         return user.first_name
     def last_name(self):
         return user.last_name
+
+class Haircut(models.Model):
+
+    name = models.TextField()
+    description = models.TextField()
+
+    contestant = models.ForeignKey(Contestant)
+    photo = models.ImageField()
+
+    goal_amount = models.DecimalField(max_digits=6, decimal_places=2)
+
+class Donation(models.Model):
+
+    contestant = models.ForeignKey(Contestant)
+    goal_amount = models.DecimalField(max_digits=6, decimal_places=2)
