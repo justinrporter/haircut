@@ -1,0 +1,987 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"file",
+				"field"
+			],
+			[
+				"api",
+				"api_response"
+			],
+			[
+				"Web",
+				"WebDriverWait	import"
+			],
+			[
+				"pt",
+				"pt_list	statement"
+			],
+			[
+				"zipp",
+				"zipped_list	statement"
+			],
+			[
+				"Workup",
+				"WorkupUpdate	class"
+			],
+			[
+				"assertNot",
+				"assertNotEqual	function"
+			],
+			[
+				"Refer",
+				"ReferralLocation	class"
+			],
+			[
+				"Referra",
+				"ReferralFollowup"
+			],
+			[
+				"sele",
+				"selenium	statement"
+			],
+			[
+				"patient",
+				"patient-detail"
+			],
+			[
+				"assert",
+				"assertIn	function"
+			],
+			[
+				"noap",
+				"noapt_reason"
+			],
+			[
+				"conta",
+				"contact_method"
+			],
+			[
+				"Contact",
+				"ContactResult	class"
+			],
+			[
+				"fu",
+				"fu_type	forstmt"
+			],
+			[
+				"url",
+				"url_args	param"
+			],
+			[
+				"live",
+				"live_submit_login	function"
+			],
+			[
+				"test_v",
+				"test_views	module"
+			],
+			[
+				"No",
+				"NoReverseMatch	class"
+			],
+			[
+				"assertNo",
+				"assertNotEqual	function"
+			],
+			[
+				"fin",
+				"find_element_by_xpath"
+			],
+			[
+				"live_",
+				"live_log_in_user	function"
+			],
+			[
+				"nonatt",
+				"nonattesting_role	forstmt"
+			],
+			[
+				"re",
+				"referral_location"
+			],
+			[
+				"bp",
+				"bp"
+			],
+			[
+				"action",
+				"actionitem_set"
+			],
+			[
+				"Run",
+				"RunSQL	class"
+			],
+			[
+				"a",
+				"all"
+			],
+			[
+				"get",
+				"get_object_or_404	function"
+			],
+			[
+				"sig",
+				"signs_charts"
+			],
+			[
+				"Inde",
+				"IndexError	class"
+			],
+			[
+				"non",
+				"nonattesting_role	forstmt"
+			],
+			[
+				"worku",
+				"workup-sign"
+			],
+			[
+				"test",
+				"test_views	module"
+			],
+			[
+				"Referr",
+				"ReferralType	class"
+			],
+			[
+				"validate",
+				"validate_attending	function"
+			],
+			[
+				"assertE",
+				"assertEqual	function"
+			],
+			[
+				"clinic",
+				"clinic_day	statement"
+			],
+			[
+				"Cl",
+				"ClinicType	class"
+			],
+			[
+				"Provi",
+				"ProviderType	class"
+			],
+			[
+				"ass",
+				"associated_user"
+			],
+			[
+				"new",
+				"new_provider	statement"
+			],
+			[
+				"provid",
+				"provider_email"
+			],
+			[
+				"needs",
+				"needs_workup	statement"
+			],
+			[
+				"pat",
+				"patient_reached"
+			],
+			[
+				"clean",
+				"cleaned_data	statement"
+			],
+			[
+				"alt",
+				"alt_owner"
+			],
+			[
+				"N",
+				"N_ALT_PHONES	statement"
+			],
+			[
+				"alternate",
+				"alternate_phone_4"
+			],
+			[
+				"course",
+				"course_id	param"
+			],
+			[
+				"cour",
+				"course_id	param"
+			],
+			[
+				"mod",
+				"module_items	statement"
+			],
+			[
+				"page",
+				"page_source"
+			],
+			[
+				"referr",
+				"referral_type"
+			],
+			[
+				"noa",
+				"noapt_reason"
+			],
+			[
+				"find_element_",
+				"find_element_by_partial_link_text	function"
+			],
+			[
+				"un",
+				"unwrapped_urlconf	statement"
+			],
+			[
+				"buil",
+				"build_provider_and_log_in	function"
+			],
+			[
+				"dose",
+				"DOSE_DAYS	statement"
+			],
+			[
+				"o",
+				"objects"
+			],
+			[
+				"sch",
+				"schedule	statement"
+			],
+			[
+				"assertEq",
+				"assertEquals	statement"
+			],
+			[
+				"date",
+				"date_expected"
+			],
+			[
+				"date_",
+				"date_expected	statement"
+			],
+			[
+				"vax",
+				"VaxDose"
+			],
+			[
+				"Vax",
+				"VaxPlan	class"
+			],
+			[
+				"Posi",
+				"PositiveSmallIntegerField	class"
+			],
+			[
+				"cle",
+				"cleaned_data	statement"
+			],
+			[
+				"now",
+				"noshow_reason"
+			],
+			[
+				"nosho",
+				"noshow_reason"
+			],
+			[
+				"bu",
+				"build_form	function"
+			],
+			[
+				"succ",
+				"contact_successful"
+			],
+			[
+				"has",
+				"has_appointment	param"
+			],
+			[
+				"contact",
+				"contact_successful	param"
+			],
+			[
+				"Re",
+				"ReferralType	class"
+			],
+			[
+				"valid",
+				"validate_zip"
+			],
+			[
+				"time",
+				"timezone	module"
+			],
+			[
+				"validat",
+				"validate_bp	function"
+			],
+			[
+				"canvas",
+				"canvas_url"
+			],
+			[
+				"ide",
+				"indexOf"
+			],
+			[
+				"HYP",
+				"HYPHEN_2"
+			],
+			[
+				"HY",
+				"HYPHEN_2	statement"
+			],
+			[
+				"Valid",
+				"ValidationError	class"
+			],
+			[
+				"clin",
+				"clin_tags	statement"
+			],
+			[
+				"MED",
+				"MEDPRIV_SECRET	statement"
+			],
+			[
+				"Pro",
+				"provider"
+			],
+			[
+				"pro",
+				"provider	statement"
+			],
+			[
+				"send",
+				"send_email	function"
+			],
+			[
+				"events",
+				"events_without_links	statement"
+			],
+			[
+				"even",
+				"event_has_link"
+			],
+			[
+				"nee",
+				"needle_list	statement"
+			],
+			[
+				"cal",
+				"calset	statement"
+			],
+			[
+				"s",
+				"s	statement"
+			],
+			[
+				"tag",
+				"tag_set"
+			],
+			[
+				"canv",
+				"canvas_url"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"inde",
+				"indexOf"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"res",
+				"response	param"
+			],
+			[
+				"sub",
+				"submitted_doc	statement"
+			],
+			[
+				"pt1",
+				"pt1_ai	statement"
+			],
+			[
+				"tim",
+				"timedelta	class"
+			],
+			[
+				"Action",
+				"ActionInstruction	class"
+			],
+			[
+				"validate_b",
+				"validate_birth_date"
+			],
+			[
+				"Ref",
+				"ReferralFollowup	class"
+			],
+			[
+				"Gene",
+				"GeneralFollowup	class"
+			],
+			[
+				"Lab",
+				"LabFollowup	class"
+			],
+			[
+				"vol",
+				"volunteer_names	statement"
+			],
+			[
+				"process",
+				"process_command_line	function"
+			],
+			[
+				"consensu",
+				"consensus_info	statement"
+			],
+			[
+				"count",
+				"count_nonzero	statement"
+			],
+			[
+				"padd",
+				"padded_removes	statement"
+			],
+			[
+				"paddin",
+				"padding_px"
+			],
+			[
+				"padding",
+				"padding_ratio	param"
+			],
+			[
+				"mediadi",
+				"mediadir_log"
+			],
+			[
+				"media",
+				"mediadir_log	function"
+			],
+			[
+				"crop",
+				"crop_to_segmentation"
+			],
+			[
+				"sitk",
+				"sitkstrats	module"
+			],
+			[
+				"assertLess",
+				"assertLessEqual	function"
+			],
+			[
+				"assertAlmost",
+				"assertAlmostEquals	statement"
+			],
+			[
+				"stat",
+				"status_code"
+			],
+			[
+				"Do",
+				"DocumentType	class"
+			],
+			[
+				"Doc",
+				"Document	class"
+			],
+			[
+				"Docu",
+				"DocumentType	class"
+			],
+			[
+				"D",
+				"DateTimePicker	class"
+			],
+			[
+				"VENV",
+				"VENV_DIR	statement"
+			],
+			[
+				"ur",
+				"urlpatterns"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Django Runserver",
+					""
+				],
+				[
+					"Django Test",
+					""
+				]
+			],
+			[
+				"Django Runserver",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 469.0,
+		"history":
+		[
+			"pylint --version",
+			"print(PYLINT_VERSION)",
+			"print PYLINT_VERSION",
+			"pylint --version",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jrporter/projects/haircut"
+	],
+	"file_history":
+	[
+		"/Users/jrporter/projects/haircut/app/templates/home.html",
+		"/Users/jrporter/projects/haircut/app/models.py",
+		"/Users/jrporter/projects/haircut/haircut/wsgi.py",
+		"/Users/jrporter/projects/haircut/haircut/settings.py",
+		"/Users/jrporter/projects/haircut/haircut.sublime-project",
+		"/Users/jrporter/projects/haircut/app/apps.py",
+		"/Users/jrporter/projects/haircut/haircut/urls.py",
+		"/Users/jrporter/projects/haircut/app/urls.py",
+		"/Users/jrporter/projects/haircut/app/templates/app/home.html",
+		"/Users/jrporter/projects/haircut/app/views.py",
+		"/Users/jrporter/Desktop/anki_eval.py",
+		"/Users/jrporter/Desktop/wrapped.json",
+		"/Users/jrporter/Desktop/preferred.json",
+		"/Users/jrporter/Desktop/explanations.json",
+		"/Users/jrporter/Desktop/abbreviations.json",
+		"/Users/jrporter/Rosetta/main/source/src/protocols/topology_broker/FoldandDockClaimer.cc",
+		"/Users/jrporter/Rosetta/main/source/src/protocols/topology_broker/BasicJumpClaimer.cc",
+		"/Users/jrporter/Rosetta/main/source/src/protocols/rigid/UniformRigidBodyCM.cc",
+		"/Users/jrporter/projects/babies/server/djbabies/urls.py",
+		"/Users/jrporter/projects/babies/server/core/views.py",
+		"/Users/jrporter/projects/osler/pttrack/views.py",
+		"/Users/jrporter/projects/babies/server/core/models.py",
+		"/Users/jrporter/projects/babies/server/core/serializers.py",
+		"/Users/jrporter/Dropbox/Netter's AtlasofHumanAnatomy.pdf",
+		"/Users/jrporter/projects/osler/pttrack/templates/pttrack/patient_list.html",
+		"/Users/jrporter/projects/djbabies/djbabies/djbabies/urls.py",
+		"/Users/jrporter/projects/osler/osler.sublime-project",
+		"/Users/jrporter/Documents/Anki/addons/Editor_Autocomplete.py",
+		"/Users/jrporter/muctime.py",
+		"/Users/jrporter/projects/osler/pttrack/circle.yml",
+		"/Users/jrporter/projects/osler/pttrack/test_views.py",
+		"/Users/jrporter/projects/osler/osler/base_settings.py",
+		"/Users/jrporter/Desktop/travis.html",
+		"/Users/jrporter/Desktop/local.html",
+		"/Users/jrporter/projects/osler/pttrack/templates/pttrack/base.html",
+		"/Users/jrporter/projects/osler/followup/tests.py",
+		"/Users/jrporter/projects/osler/circle.yml",
+		"/Users/jrporter/projects/osler/workup/forms.py",
+		"/Users/jrporter/projects/osler/pttrack/forms.py",
+		"/Users/jrporter/projects/osler/pttrack/templates/pttrack/new-provider.html",
+		"/Users/jrporter/projects/osler/workup/templates/workup/workup-create.html",
+		"/Users/jrporter/projects/osler/pttrack/templates/pttrack/base-form.html",
+		"/Users/jrporter/projects/clintools/followup/tests.py",
+		"/Users/jrporter/projects/clintools/pttrack/models.py",
+		"/Users/jrporter/Desktop/Fidaxomicin.svg",
+		"/Users/jrporter/projects/babies/README.md",
+		"/Users/jrporter/projects/clintools/pttrack/views.py",
+		"/Users/jrporter/projects/clintools/workup/views.py",
+		"/Users/jrporter/projects/clintools/followup/models.py",
+		"/Users/jrporter/projects/clintools/followup/templates/followup/referral-followup-create.html",
+		"/Users/jrporter/projects/clintools/workup/forms.py",
+		"/Users/jrporter/projects/clintools/followup/forms.py",
+		"/Users/jrporter/projects/clintools/pttrack/test_views.py",
+		"/Users/jrporter/projects/clintools/osler/base_settings.py",
+		"/Users/jrporter/projects/clintools/followup/urls.py",
+		"/Users/jrporter/sharpoint-app.py",
+		"/Users/jrporter/projects/clintools/workup/tests.py",
+		"/Users/jrporter/projects/clintools/pttrack/urls.py",
+		"/Users/jrporter/projects/clintools/pttrack/test_validators.py",
+		"/Users/jrporter/projects/clintools/osler/urls.py",
+		"/Users/jrporter/projects/clintools/pttrack/templates/pttrack/patient_detail.html",
+		"/Users/jrporter/projects/clintools/pttrack/templates/pttrack/base.html",
+		"/Users/jrporter/projects/clintools/osler.sublime-project",
+		"/Users/jrporter/projects/clintools/workup/templates/workup/workup-create.html",
+		"/Users/jrporter/projects/clintools/workup/models.py",
+		"/Users/jrporter/projects/clintools/osler/debug_settings.py",
+		"/Users/jrporter/projects/clintools/osler/deploy_settings.py",
+		"/Users/jrporter/projects/clintools/pttrack/templates/pttrack/base-form.html",
+		"/Users/jrporter/projects/clintools/followup/views.py",
+		"/Users/jrporter/projects/clintools/pttrack/forms.py",
+		"/Users/jrporter/projects/clintools/workup/urls.py",
+		"/Users/jrporter/projects/clintools/manage.py",
+		"/Users/jrporter/projects/clintools/osler/wsgi.py",
+		"/Users/jrporter/projects/clintools/.travis.yml",
+		"/Users/jrporter/projects/clintools/scripts/reset_db.sh",
+		"/Users/jrporter/projects/clintools/clintools/wsgi.py",
+		"/Users/jrporter/projects/clintools/pttrack/migrations/0001_0010_initial.py",
+		"/Users/jrporter/projects/clintools/pttrack/migrations/0011_workup_app.py",
+		"/Users/jrporter/projects/clintools/venv/lib/python2.7/site-packages/django/db/migrations/state.py",
+		"/Users/jrporter/projects/clintools/followup/migrations/0001_initial.py",
+		"/Users/jrporter/projects/clintools/workup/migrations/0001_initial.py",
+		"/Users/jrporter/projects/clintools/pttrack/migrations/0005_auto_20150915_1942.py",
+		"/Users/jrporter/projects/clintools/pttrack/migrations/0002_workup_app.py",
+		"/Users/jrporter/projects/clintools/pttrack/migrations/0001_initial.py",
+		"/Users/jrporter/projects/clintools/pttrack/migrations/0009_auto_20151030_1822.py",
+		"/Users/jrporter/projects/clintools/pttrack/migrations/0003_auto_20150911_1012.py",
+		"/Users/jrporter/projects/clintools/pttrack/migrations/0002_auto_20151225_2259.py",
+		"/Users/jrporter/projects/clintools/clintools/urls.py",
+		"/Users/jrporter/projects/clintools/scripts/init_db.py",
+		"/Users/jrporter/projects/clintools/workup/validators.py",
+		"/Users/jrporter/projects/clintools/pttrack/admin.py",
+		"/Users/jrporter/projects/clintools/pttrack/fixtures/basic_fixture.json",
+		"/Users/jrporter/projects/clintools/clintools/base_settings.py",
+		"/Users/jrporter/projects/clintools/pttrack/validators.py",
+		"/Users/jrporter/projects/clintools/workups/admin.py",
+		"/Users/jrporter/projects/clintools/teams/models.py",
+		"/Users/jrporter/projects/clintools/teams/tests.py",
+		"/Users/jrporter/projects/clintools/pttrack/decorators.py",
+		"/Users/jrporter/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jrporter/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/jrporter/projects/clintools/.gitignore",
+		"/Users/jrporter/projects/clintools/pttrack/__init__.py",
+		"/Users/jrporter/projects/angular-express-seed/README.md",
+		"/Users/jrporter/projects/clintools/scripts/debug_init_db.py",
+		"/Users/jrporter/projects/clintools/pttrack/templates/registration/login.html",
+		"/Users/jrporter/projects/caldemux/views/index.jade",
+		"/Users/jrporter/projects/clintools/pttrack/templates/pttrack/new-user.html",
+		"/Users/jrporter/projects/clintools/pttrack/test_forms.py",
+		"/Users/jrporter/projects/canvas-hack/canvas_scrape.py",
+		"/Users/jrporter/projects/canvas-hack/canvas_api.py",
+		"/Users/jrporter/Desktop/typos-block-3.txt",
+		"/Users/jrporter/Desktop/app-data.txt",
+		"/Users/jrporter/Desktop/ShowNoteShortcut.py",
+		"/Users/jrporter/projects/anki/anki/sync.py",
+		"/Users/jrporter/projects/ginkgo/ginkgo/sync.py",
+		"/Users/jrporter/projects/ginkgo/Ginkgo.py",
+		"/Users/jrporter/projects/clintools/pttrack/migrations/0010_followup_app.py",
+		"/Users/jrporter/projects/clintools/pttrack/migrations/0008_auto_20151027_1222.py",
+		"/Users/jrporter/projects/clintools/pttrack/migrations/0004_auto_20150911_1026.py",
+		"/Users/jrporter/Dropbox/skype-failure",
+		"/Users/jrporter/cal.ics",
+		"/Users/jrporter/projects/clintools/pttrack/migrations/.gitignore",
+		"/Users/jrporter/projects/clintools/pttrack/migrations/0002_followup_app.py",
+		"/Users/jrporter/projects/clintools/followup/migrations/0002_auto_20151120_0022.py",
+		"/Users/jrporter/projects/clintools/followup/migrations/0002_auto_20151120_0016.py",
+		"/Users/jrporter/projects/clintools/pttrack/templates/pttrack/new-provider.html",
+		"/Users/jrporter/projects/clintools/followup/migrations/0001_init.py",
+		"/Users/jrporter/projects/clintools/pttrack/migrations/0002_auto_20151119_0921.py"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tsh",
+			"men",
+			"mgus",
+			"CVID",
+			"LCH",
+			"UniformRigidBodyMover",
+			"UniformRigidBodyMoverOP",
+			"mover_",
+			"hus",
+			"noapt_re",
+			"id_apt_location",
+			"id_pt_show",
+			"id_noapt",
+			"hide",
+			"show",
+			"print",
+			"implicit",
+			"print",
+			"reverse",
+			"Provider",
+			"is_visible",
+			"visible",
+			"General",
+			"model:",
+			"FU_TYPE",
+			"Workup",
+			"ProviderType",
+			"Provider",
+			"LiveTesting",
+			"patient_detail",
+			"NoteFormView",
+			"initial",
+			"template",
+			"Document",
+			"written_date",
+			"timezone",
+			"TODO",
+			"clin",
+			"workup",
+			"Many",
+			"diagnosis",
+			"validate_bp",
+			"follow",
+			"HistoricalGeneralFollowup",
+			"follow",
+			"validate_bp",
+			"bases",
+			"base",
+			"pttrack.validators.validate_bp",
+			"pttrack.validators.validate_bpw",
+			"validator",
+			"def get",
+			"def get(",
+			"get(",
+			"can_attend",
+			"class Provider",
+			"can_attend",
+			"BASIC",
+			"class Provider",
+			"print",
+			"class Provider",
+			"Formview",
+			"formview",
+			"FormView",
+			">>>>",
+			"Frankie",
+			"followup_models.",
+			"models.",
+			"runhook",
+			"validate",
+			"pttrack.valid",
+			"pttrack.",
+			"NowShow",
+			"FormView",
+			"followup",
+			"follow",
+			"BASIC_F",
+			"followup-choice",
+			".Patient",
+			"Patient",
+			"myforms",
+			"phone_directory",
+			"EmailField",
+			"followup_models",
+			"reverse",
+			"fu_models",
+			"models",
+			"NoteUpdate",
+			"Followup",
+			"class Contact",
+			"ReferralLoc",
+			"Patient.objects",
+			"Patient",
+			"build_provider",
+			"validate_",
+			"include",
+			"radioselect",
+			"pttrack.models",
+			"validate_",
+			"validators.",
+			"validate_",
+			"vali",
+			"validate_",
+			"today",
+			"HEAD",
+			"blank=true",
+			"signed",
+			"Followup",
+			"followup",
+			"form",
+			".short_name",
+			"short_name",
+			"attend",
+			"attending",
+			"\"Attending",
+			"with",
+			"Example",
+			"bootstrap_",
+			"user",
+			"ClinicDate",
+			"DTend",
+			"Intake",
+			"create",
+			"patient",
+			"ssn",
+			"class Provider",
+			"['BASIC_FIXTURE']",
+			"['basic_fixture']"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"is_displayed",
+			"is_visible",
+			"followup.",
+			"core.",
+			"forms",
+			"models",
+			"[BASIC_FIXTURE]",
+			"['BASIC_FIXTURE']",
+			"ReferralLocation",
+			"self"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 176.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Django Runserver",
+	"project": "haircut.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/projects/caldemux/views/index.jade"
+			],
+			[
+				"model",
+				"~/projects/clintools/pttrack/models.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"ClinicDate"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 208.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
