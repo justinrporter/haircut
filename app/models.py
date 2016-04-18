@@ -23,7 +23,7 @@ class Donation(models.Model):
     contestant = models.ForeignKey(Contestant)
     amount = models.DecimalField(max_digits=6, decimal_places=2)
     email = models.TextField()
-    
+
     created = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
