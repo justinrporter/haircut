@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from app.models import Contestant, Donation, Haircut
 
 c = Contestant.objects.create(
@@ -27,7 +29,7 @@ Donation.objects.create(
     contestant=c)
 
 Donation.objects.create(
-    transaction_id='asdfee13234231ddsfd',
+    transaction_id='asdfee13235231ddsfd',
     email="another_one@ggg.com",
     amount=15,
     contestant=c)

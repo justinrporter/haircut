@@ -16,6 +16,13 @@ def home(request):
 class ContestantDetailView(DetailView):
     model = models.Contestant
 
+    def get_context_data(self, **kwargs):
+        context = super(ContestantDetailView, self).get_context_data(**kwargs)
+        donations = self.object.donation_set.all()
+        context['donation_people'] = len(donations)
+        context['donation_total'] = reduce(lambda x,y: x + y.amount,donations,0)
+        return context
+
 # class HaircutDetailView(DetailView):
 #     model = models.Haircut
 
@@ -44,7 +51,12 @@ def donation_callback_view(request,pk):
     result = paypal.Verify(tx)
     c = models.Contestant.objects.get(pk=pk)
     if result.success() and ctx['amt'] == result.amount(): # valid
-        donation = models.Donation.objects.create(transaction_id=tx,contestant=c,amount=float(result.amount()),email=result.email())
-        return redirect('contestant-detail',pk=pk)
+        try:
+            amt = float(result.amount())
+            donation = models.Donation.objects.create(transaction_id=tx,contestant=c,amount=amt,email=result.email())
+            return redirect('contestant-detail',pk=pk)
+        except:
+            # either couldn't convert amount to float or couldn't create model 
+            pass
     # FIXME: display error message
     return HttpResponseForbidden()

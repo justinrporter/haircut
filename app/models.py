@@ -27,7 +27,7 @@ class Donation(models.Model):
     created = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
-        return email+": "+transaction_id
+        return self.email+": "+self.transaction_id
 
 
 class Haircut(models.Model):
