@@ -1,8 +1,7 @@
 from django.conf import settings
-from django.http import HttpResponseForbidden
+from django.http import HttpResponseForbidden, Http404
 from django.shortcuts import render
 from django.views.generic.detail import DetailView
-from django.core import reverse
 
 import paypal
 from . import models
@@ -23,11 +22,16 @@ class HaircutDetailView(DetailView):
     model = models.Haircut
 
 def donateview(request,pk):
+    try:
+        c = models.Contestant.objects.get(pk=pk)
+    except:
+        raise Http404 
     ctx = {
         "paypal_url": settings.PAYPAL_URL,
         "paypal_id": settings.MERCHANT_ID,
         "paypal_return_url": request.build_absolute_uri(),
-        "paypal_cancel_return_url": "http://127.0.0.1:8000"
+        "paypal_cancel_return_url": "http://127.0.0.1:8000",
+        "contestant_name": ' '.join([c.first_name,c.last_name])
     }
     return render(request, "paypaltest.html", ctx)
 

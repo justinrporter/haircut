@@ -16,6 +16,6 @@ urlpatterns = [
         views.donateview,
         name='contestant-donate'),
     url(r'^contestant/(?P<pk>[-\w]+)/donate/callback?$',
-        views.donapurchasedteview,
+        views.purchased,
         name='contestant-donate-callback'),
 ]
