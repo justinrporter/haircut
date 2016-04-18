@@ -2,6 +2,8 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.conf import settings
+from django.db.models import Sum
+
 
 class Contestant(models.Model):
     #the user model should have email, name, etc.
@@ -9,7 +11,14 @@ class Contestant(models.Model):
     last_name = models.TextField()
 
     bio = models.TextField()
-    pic = models.ImageField()
+    photo = models.ImageField()
+
+
+class Donation(models.Model):
+
+    contestant = models.ForeignKey(Contestant)
+    amount = models.DecimalField(max_digits=6, decimal_places=2)
+
 
 class Haircut(models.Model):
 
@@ -21,7 +30,13 @@ class Haircut(models.Model):
 
     goal_amount = models.DecimalField(max_digits=6, decimal_places=2)
 
-class Donation(models.Model):
+    def progress(self):
 
-    contestant = models.ForeignKey(Contestant)
-    amount = models.DecimalField(max_digits=6, decimal_places=2)
+        total_raised = Donation.objects.\
+            filter(contestant=self.contestant).\
+            aggregate(Sum('amount'))['amount__sum']
+
+        progress = min(total_raised/self.goal_amount, 1) * 100
+
+        return progress
+
