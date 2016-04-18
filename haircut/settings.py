@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=-n20ckxfssoc7kti@-j=k4ike#j3ap8j6t@#b6x_d9liy!-x1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -77,24 +77,24 @@ WSGI_APPLICATION = 'haircut.wsgi.application'
 
 import dj_database_url
 
-if not DEBUG: # FIXME
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
+# if not DEBUG: # FIXME
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         }
+#     }
+# else:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql', 
+        'NAME': 'dfj2s6hkoorl72',
+        'USER': 'wghqgdanopcgqh',
+        'PASSWORD': 'Z1sCMT1ZZ84_YCPVmCiW-IlE92',
+        'HOST': 'ec2-54-225-103-29.compute-1.amazonaws.com', # Or something like this
+        'PORT': '5432',                     
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql', 
-            'NAME': 'dfj2s6hkoorl72',
-            'USER': 'wghqgdanopcgqh',
-            'PASSWORD': 'Z1sCMT1ZZ84_YCPVmCiW-IlE92',
-            'HOST': 'ec2-54-225-103-29.compute-1.amazonaws.com', # Or something like this
-            'PORT': '5432',                     
-        }
-    }
+}
 
 
 # Password validation
