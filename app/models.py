@@ -19,6 +19,10 @@ class Donation(models.Model):
     contestant = models.ForeignKey(Contestant)
     amount = models.DecimalField(max_digits=6, decimal_places=2)
 
+    transaction_id = models.CharField(max_length=250)
+    email = models.TextField()
+    amount = models.DecimalField(max_digits=6, decimal_places=2)
+
 
 class Haircut(models.Model):
 
@@ -39,4 +43,3 @@ class Haircut(models.Model):
         progress = min(total_raised/self.goal_amount, 1) * 100
 
         return progress
-
