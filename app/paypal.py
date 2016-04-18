@@ -36,3 +36,6 @@ class Verify(object):
 
     def amount(self):
         return self.results['payment_gross']
+
+    def email(self):
+        return urllib.unquote(self.results['payer_email'])

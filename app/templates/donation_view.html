@@ -14,10 +14,10 @@
         <input type="hidden" name="business" value="{{ paypal_id }}">
         <input type="hidden" name="currency_code" value="USD">
         <input type="hidden" name="return" value="{{ paypal_return_url }}">
-        <input type="hidden" name="cancel_return" value="{{ paypal_cancel_url }}/">
+        <input type="hidden" name="cancel_return" value="{{ paypal_cancel_url }}">
         <div class="form-group">
           <div class="col-md-6">
-            <input type="text" name="amount" class="form-control" placeholder="amount" required pattern="\d+">
+            <input type="text" name="amount" class="form-control" placeholder="amount" required pattern="\d+(?:\.\d+)?">
           </div>
         </div>
         <div class="form-group">
