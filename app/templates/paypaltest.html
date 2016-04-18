@@ -3,28 +3,30 @@
 
 {% block content %}
 
-<div class="row" style="padding-top:50px">
-  <h3>Donate to {{ contestant_name }}</h3>
-</div>
-<div class="row">
+<div class="row" style="padding-top:25px">
   <div class="col-md-6 col-md-offset-3">
-    <form action="{{ paypal_url }}" method="post" class='form-horizontal'>
-      <input type="hidden" name="cmd" value="_xclick">
-      <input type="hidden" name="business" value="{{ paypal_id }}">
-      <input type="hidden" name="currency_code" value="USD">
-      <input type="hidden" name="return" value="{{ paypal_return_url }}">
-      <input type="hidden" name="cancel_return" value="{{ paypal_cancel_url }}/">
-      <div class="form-group">
-        <div class="col-md-6">
-          <input type="text" name="amount" class="form-control" placeholder="amount" required pattern="\d+">
+    <div class="row">
+        <h3>Donate to {{ contestant_name }}</h3>
+    </div>
+    <div class="row">
+      <form action="{{ paypal_url }}" method="post" class='form-horizontal'>
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="{{ paypal_id }}">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="return" value="{{ paypal_return_url }}">
+        <input type="hidden" name="cancel_return" value="{{ paypal_cancel_url }}/">
+        <div class="form-group">
+          <div class="col-md-6">
+            <input type="text" name="amount" class="form-control" placeholder="amount" required pattern="\d+">
+          </div>
         </div>
-      </div>
-      <div class="form-group">
-        <div class="col-md-12">
-          <input type="submit" value="Donate!" class='btn btn-default'>
+        <div class="form-group">
+          <div class="col-md-12">
+            <input type="submit" value="Donate!" class='btn btn-success'>
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </div>
 
