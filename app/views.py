@@ -2,6 +2,7 @@ from django.conf import settings
 from django.http import HttpResponseForbidden, Http404
 from django.shortcuts import render
 from django.views.generic.detail import DetailView
+from django.core.urlresolvers import reverse
 
 import paypal
 from . import models
@@ -30,7 +31,7 @@ def donateview(request,pk):
         "paypal_url": settings.PAYPAL_URL,
         "paypal_id": settings.MERCHANT_ID,
         "paypal_return_url": request.build_absolute_uri(),
-        "paypal_cancel_return_url": "http://127.0.0.1:8000",
+        "paypal_cancel_return_url": '',
         "contestant_name": ' '.join([c.first_name,c.last_name])
     }
     return render(request, "paypaltest.html", ctx)
