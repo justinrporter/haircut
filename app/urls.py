@@ -7,5 +7,5 @@ urlpatterns = [
         views.home,
         name="home"),
     url(r'^paypaltest$',views.paypaltest,name="paypaltest"),
-    url(r'^paypaltest/(?P<haircut>\w+)$',views.purchased,name="purchased")
+    url(r'^paypaltest/(?P<contestant>\w+)$',views.purchased,name="purchased")
 ]

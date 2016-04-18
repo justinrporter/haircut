@@ -124,3 +124,17 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+
+
+PAYPAL_PDT_TOKEN = "PRr9RXwqJn1k2HTnFNk5J19vKntMe8SfmIne90DIfURqRYGce_ZD-QgQBMe"
+PAYPAL_URL = 'https://www.sandbox.paypal.com/cgi-bin/webscr'
+PAYPAL_PDT_URL = 'https://www.sandbox.paypal.com/cgi-bin/webscr'
+
+
+MERCHANT_ID = "L8KF3JYDVNWTS"
+
+# live
+# PAYPAL_PDT_TOKEN = "k1OPFc7pSY2TkX1sX4-EecbL8vyWWlSkH8dg03u5xBXrF6lW8ehQGpvkWY8"
+# PAYPAL_URL = 'https://www.paypal.com/cgi-bin/webscr'
+# PAYPAL_PDT_URL = 'https://www.paypal.com/cgi-bin/webscr'
+# MERCHANT_ID = "WVUT663HTXM3Q"
