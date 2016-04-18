@@ -8,17 +8,16 @@ import paypal
 from . import models
 
 def home(request):
-    return render(request, "home.html")
+
+    context = {"contestants": models.Contestant.objects.all()}
+
+    return render(request, "home.html", context=context)
 
 class ContestantDetailView(DetailView):
     model = models.Contestant
 
-    def get_context_data(self, **kwargs):
-        context = super(DetailView, self).get_context_data(**kwargs)
-
-        # TODO: add in $$
-
-        return context
+# class HaircutDetailView(DetailView):
+#     model = models.Haircut
 
 class HaircutDetailView(DetailView):
     model = models.Haircut
