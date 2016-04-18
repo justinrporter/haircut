@@ -47,6 +47,8 @@ class Haircut(models.Model):
         total_raised = Donation.objects.\
             filter(contestant=self.contestant).\
             aggregate(Sum('amount'))['amount__sum']
+        if not total_raised:
+            total_raised = 0
 
         progress = min(total_raised/self.goal_amount, 1) * 100
 
