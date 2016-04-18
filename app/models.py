@@ -13,6 +13,8 @@ class Contestant(models.Model):
     bio = models.TextField()
     photo = models.ImageField()
 
+    def __unicode__(self):
+        return self.first_name+" "+self.last_name
 
 class Donation(models.Model):
 
@@ -20,7 +22,9 @@ class Donation(models.Model):
     contestant = models.ForeignKey(Contestant)
     amount = models.DecimalField(max_digits=6, decimal_places=2)
     email = models.TextField()
-    created = models.DateTimeField(auto_now_add=True)
+    
+    def __unicode__(self):
+        return email+": "+transaction_id
 
 class Haircut(models.Model):
 
@@ -31,6 +35,9 @@ class Haircut(models.Model):
     photo = models.ImageField()
 
     goal_amount = models.DecimalField(max_digits=6, decimal_places=2)
+
+    def __unicode__(self):
+        return self.name
 
     def progress(self):
         total_raised = Donation.objects.\
