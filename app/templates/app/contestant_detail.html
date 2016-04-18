@@ -10,9 +10,10 @@
         <div class="col-md-2">
           <img src="{{object.photo}}" class="img-circle" alt="{{object.first_name}}" />
         </div>
-        <div class="col-md-8">
+        <div class="col-md-10">
           <h1>It's {{ contestant.first_name }} {{ contestant.last_name}} !!!</h1>
           <p>{{object.bio}}</p>
+          <p><a class="btn btn-primary btn-lg" href="{% url 'contestant-donate' pk=contestant.pk %}" role="button">Make {{ contestant.first_name }} look crazy &raquo;</a></p>
         </div>
       </div>
     </div>
@@ -31,13 +32,11 @@
             {{ progresses }}
 
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="{{haircut.progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{haircut.progress}}%;">{{haircut.progress}}%</div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="{{haircut.progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{haircut.progress}}%;">{{ haircut.progress | floatformat:1 }}%</div>
             </div>
           </div>
         {% endfor %}
       </div>
-
-
     </div>
 
 {% endblock %}

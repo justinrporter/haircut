@@ -35,7 +35,7 @@ def donation_view(request,pk):
         "paypal_cancel_url": request.build_absolute_uri('/'),
         "contestant_name": ' '.join([c.first_name,c.last_name])
     }
-    return render(request, "paypaltest.html", ctx)
+    return render(request, "donation_view.html", ctx)
 
 # donation callback
 def donation_callback_view(request,pk):

@@ -4,19 +4,19 @@
    Author's custom styles
    ========================================================================== */
 
+.masthead {
+  margin-bottom: 30px;
 
+  background-color: #eee;
+  background-image: url(//static.pexels.com/photos/4614/woman-morning-bathrobe-bathroom.jpg);
+  background-position: 0% 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  color: #eee;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  text-align: center;
+}
