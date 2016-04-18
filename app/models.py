@@ -16,15 +16,19 @@ class Contestant(models.Model):
     def __unicode__(self):
         return self.first_name+" "+self.last_name
 
+
 class Donation(models.Model):
 
-    transaction_id = models.CharField(primary_key=True,max_length=250)
+    transaction_id = models.CharField(primary_key=True, max_length=250)
     contestant = models.ForeignKey(Contestant)
     amount = models.DecimalField(max_digits=6, decimal_places=2)
     email = models.TextField()
     
+    created = models.DateTimeField(auto_now_add=True)
+
     def __unicode__(self):
         return email+": "+transaction_id
+
 
 class Haircut(models.Model):
 
