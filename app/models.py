@@ -13,15 +13,21 @@ class Contestant(models.Model):
     bio = models.TextField()
     photo = models.ImageField()
 
+    def __unicode__(self):
+        return self.first_name+" "+self.last_name
+
 
 class Donation(models.Model):
 
+    transaction_id = models.CharField(primary_key=True, max_length=250)
     contestant = models.ForeignKey(Contestant)
     amount = models.DecimalField(max_digits=6, decimal_places=2)
-
-    transaction_id = models.CharField(max_length=250)
     email = models.TextField()
-    amount = models.DecimalField(max_digits=6, decimal_places=2)
+    
+    created = models.DateTimeField(auto_now_add=True)
+
+    def __unicode__(self):
+        return email+": "+transaction_id
 
 
 class Haircut(models.Model):
@@ -34,8 +40,10 @@ class Haircut(models.Model):
 
     goal_amount = models.DecimalField(max_digits=6, decimal_places=2)
 
-    def progress(self):
+    def __unicode__(self):
+        return self.name
 
+    def progress(self):
         total_raised = Donation.objects.\
             filter(contestant=self.contestant).\
             aggregate(Sum('amount'))['amount__sum']
