@@ -31,13 +31,11 @@
             {{ progresses }}
 
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="{{haircut.progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{haircut.progress}}%;">{{haircut.progress}}%</div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="{{haircut.progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{haircut.progress}}%;">{{ haircut.progress | floatformat:1 }}%</div>
             </div>
           </div>
         {% endfor %}
       </div>
-
-
     </div>
 
 {% endblock %}
