@@ -20,10 +20,18 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret! 
-SECRET_KEY = '=-n20ckxfssoc7kti@-j=k4ike#j3ap8j6t@#b6x_d9liy!-x1'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# In production, set 'DJANGO_SECRET_KEY' to a real key.
+try:
+    SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
+except KeyError:
+    SECRET_KEY = '=-n20ckxfssoc7kti@-j=k4ike#j3ap8j6t@#b6x_d9liy!-x1'
+
+# In production set 'DJANGO_DEBUG' environment var to False
+try:
+    DEBUG = os.environ['DJANGO_DEBUG']
+except KeyError:
+    DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -138,6 +146,9 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
+
+if DEBUG:
+    CSRF_COOKIE_SECURE = True
 
 PAYPAL_PDT_TOKEN = "PRr9RXwqJn1k2HTnFNk5J19vKntMe8SfmIne90DIfURqRYGce_ZD-QgQBMe"
 PAYPAL_URL = 'https://www.sandbox.paypal.com/cgi-bin/webscr'
