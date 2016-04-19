@@ -31,6 +31,8 @@ except KeyError:
 try:
     DEBUG = os.environ['DJANGO_DEBUG']
 except KeyError:
+    print "Settings failed to detect DJANGO_DEBUG envrionment variable.", \
+        "Falling back to DEBUG == True"
     DEBUG = True
 
 ALLOWED_HOSTS = ['*']
