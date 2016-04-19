@@ -8,18 +8,18 @@
     <div class="jumbotron ">
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
-            <img src="{{object.photo}}" class="img-circle" alt="{{object.first_name}}" />
+          <div class="col-md-3">
+            <img src="{{object.photo}}" class="img-circle contestant-bust" alt="{{object.first_name}}" />
           </div>
-          <div class="col-md-10">
+          <div class="col-md-9">
             <h1>It's {{ contestant.first_name }} {{ contestant.last_name}} !!!</h1>
             <p>{{object.bio}}</p>
             <p><a class="btn btn-primary btn-lg" href="{% url 'contestant-donate' pk=contestant.pk %}" role="button">Make {{ contestant.first_name }} look crazy &raquo;</a></p>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-10">
+          <div class="col-md-3"></div>
+          <div class="col-md-9">
             ${{ donation_total }} raised by {{ donation_people }} people!
           </div>
         </div>
@@ -32,7 +32,7 @@
       <div class="row">
         {% for haircut in contestant.haircut_set.all|dictsort:"goal_amount" %}
           <div class="col-md-4">
-            <img src="{{haircut.photo}}" class="img-circle center-block" alt="{{haircut.name}}" />
+            <img src="{{haircut.photo}}" class="img-circle center-block haircut-circle" alt="{{haircut.name}}" />
             <h2>{{ haircut.name }}</h2>
             <p class="lead">${{ haircut.goal_amount}}</p>
             <p>{% lorem 30 w %}</p>
