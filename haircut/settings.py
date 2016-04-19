@@ -30,7 +30,7 @@ except KeyError:
 
 # In production set 'DJANGO_DEBUG' environment var to False
 try:
-    DEBUG = os.environ['DJANGO_DEBUG']
+    DEBUG = int(os.environ['DJANGO_DEBUG'])
     print >> sys.stderr, "Setting DEBUG to", DEBUG
 except KeyError:
     print >> sys.stderr, \
