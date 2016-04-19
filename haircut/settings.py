@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
+import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -30,8 +31,10 @@ except KeyError:
 # In production set 'DJANGO_DEBUG' environment var to False
 try:
     DEBUG = os.environ['DJANGO_DEBUG']
+    print >> sys.stderr, "Setting DEBUG to", DEBUG
 except KeyError:
-    print "Settings failed to detect DJANGO_DEBUG envrionment variable.", \
+    print >> sys.stderr, \
+        "Settings failed to detect DJANGO_DEBUG envrionment variable.", \
         "Falling back to DEBUG == True"
     DEBUG = True
 
