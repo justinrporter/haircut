@@ -31,11 +31,7 @@ except KeyError:
 # In production set 'DJANGO_DEBUG' environment var to False
 try:
     DEBUG = int(os.environ['DJANGO_DEBUG'])
-    print >> sys.stderr, "Setting DEBUG to", DEBUG
 except KeyError:
-    print >> sys.stderr, \
-        "Settings failed to detect DJANGO_DEBUG envrionment variable.", \
-        "Falling back to DEBUG == True"
     DEBUG = True
 
 ALLOWED_HOSTS = ['*']
@@ -152,8 +148,22 @@ STATICFILES_DIRS = (
 )
 
 
-if DEBUG:
+if not DEBUG:
     CSRF_COOKIE_SECURE = True
+    SESSION_COOKIE_SECURE = True
+
+    SERVER_EMAIL = 'root@nicks-new-haircut'
+    ADMINS = [('Rizzo', 'rizzo.michaelg@gmail.com'),
+              ('Porter', 'justinrporter@gmail.com')]
+
+    EMAIL_USE_TLS = True
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_PORT = 587
+    EMAIL_HOST_USER = 'justinrporter@gmail.com'
+    EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASSWORD']
+    DEFAULT_FROM_EMAIL = 'justinrporter@gmail.com'
+    DEFAULT_TO_EMAIL = 'justinrporter@gmail.com'
+
 
 PAYPAL_PDT_TOKEN = "PRr9RXwqJn1k2HTnFNk5J19vKntMe8SfmIne90DIfURqRYGce_ZD-QgQBMe"
 PAYPAL_URL = 'https://www.sandbox.paypal.com/cgi-bin/webscr'
