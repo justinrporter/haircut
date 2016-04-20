@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'haircut.wsgi.application'
 
 import dj_database_url
 
-if DEBUG:
+if not DEBUG:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',

@@ -14,7 +14,7 @@
       <div class="row">
         {% for contestant in contestants %}
           <div class="col-md-4">
-            <img src="{{ contestant.photo }}" class="img-circle contestant-bust" alt="{{ ontestant.first_name }}" />
+            <div class="text-center"><img src="{{ contestant.photo }}" class="img-circle contestant-bust" alt="{{ ontestant.first_name }}" /></div>
             <h2>{{ contestant.first_name }}</h2>
             <p>{{ contestant.bio|safe }}</p>
             <p><a class="btn btn-default" href="{% url 'contestant-detail' pk=contestant.pk %}" role="button">
